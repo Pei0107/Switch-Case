@@ -12,4 +12,13 @@ switch (i)
     case 3:
         food = "milk";
         break;
+    case 4:
+        food = "fries";
+        break;
+    case 5:
+        food = "panckae";
+        break;
+    case 6:
+        food = "juice";
+        break;
 }
