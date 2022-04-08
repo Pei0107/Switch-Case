@@ -1,3 +1,8 @@
+string food = "ramen";
+
+Random random = new Random();
+int i = random.Next(0, 3);
+
 switch (i) 
 {
     case 0:
@@ -9,16 +14,24 @@ switch (i)
     case 2:
         food = "salad";
         break;
-    case 3:
-        food = "milk";
+    
+}
+Console.WriteLine ("Random recommendation:" + food + ".");
+
+Console.WriteLine ("We have ramen, spaghetti and salad. Which do you like?");
+Console.WriteLine (food + ",thank you.");
+
+switch (food) {
+    case "ramen":
+        Console.WriteLine ("It cost you NT 200.");
         break;
-    case 4:
-        food = "fries";
+    case "spaghetti":
+        Console.WriteLine ("It cost you NT 180.");
         break;
-    case 5:
-        food = "panckae";
+    case "salad":
+        Console.WriteLine ("It cost you NT 60.");
         break;
-    case 6:
-        food = "juice";
+    default:
+        Console.WriteLine ("Sorry, we don't sell " + food + ".");
         break;
 }
